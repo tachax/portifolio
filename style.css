@@ -1,0 +1,159 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    margin-top: 5%;
+    background-color: rgb(61, 137, 135); 
+    font-family: "Asap";
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+h1 {
+    font-size: 50px;
+}
+
+h3 {
+    font-family: "Ubuntu Mono";
+}
+
+.principal {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    gap: 100px;
+    justify-content: center;
+    padding: 30px;
+    margin-left: 20%;
+    margin-right: 20%;
+    border-radius: 30px;
+}
+
+.introduction {
+    text-align: center;
+    margin-top: 3%;
+}
+
+#perfil {
+    width: 160px;
+    height: 160px;
+    border-radius: 50%;
+}
+
+h5 {
+    margin-top: 10px;
+    font-size: 18px;
+}
+
+.contact {
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+    justify-content: end;
+    margin-right: 10%;
+}
+
+.contact-images {
+    display: flex;
+    flex-direction: row;
+    gap: -5px;
+    justify-content: center;
+}
+
+#github {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+}
+
+#linkedln {
+    width: 30px;
+    height: 30px;
+    margin-top: 4px;
+    border-radius: 50%;
+}
+
+#email {
+    width: 30px;
+    height: 30px;
+    margin-top: 4px;
+    margin-left: 4px;
+    border-radius: 50%;
+}
+
+#resume {
+    width: 34px;
+    height: 36px;
+    margin-top: 4px;
+    margin-left: 2px;
+    border-radius: 20%;
+}
+
+.extra {
+    margin-top: 40px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    gap: 60px;
+    justify-content: center;
+    font-family: "Ubuntu Mono";
+}
+
+h2 {
+    margin-bottom: 10px;
+    font-family: "Asap";
+}
+
+li {
+    font-weight: 400;
+    font-size: 24px;
+}
+
+.projects, .languages {
+    background-color: rgb(185, 191, 190);
+    padding: 30px;
+    border-radius: 30px;
+    border: dashed 2px rgb(61, 137, 135);
+}
+
+.progImages {
+    margin-top: 30px;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+.images {
+    display: flex;
+    justify-content: center;
+}
+
+#js {
+    width: 70px;
+    height: 50px;
+    
+}
+#html {
+    width: 50px;
+    height: 50px;
+    
+}
+#react {
+    width: 50.5px;
+    height: 50px;
+    
+}
+#piton {
+    width: 50px;
+    height: 50px;
+    
+}
+#java {
+    width: 80px;
+    height: 80px;
+   margin-top: -20px;
+}
