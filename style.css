@@ -1,3 +1,6 @@
+@import url('https://fonts.googleapis.com/css2?family=Anton&family=Montserrat:wght@500&family=Open+Sans:wght@300&display=swap');
+
+
 * {
     margin: 0;
     padding: 0;
@@ -5,8 +8,12 @@
 
 body {
     margin-top: 5%;
-    background-color: rgb(61, 137, 135); 
-    font-family: "Asap";
+    background-color: #9BBB8A; 
+}
+
+p, li {
+    font-family: 'Open Sans', sans-serif;
+
 }
 
 a {
@@ -15,39 +22,32 @@ a {
 }
 
 h1 {
-    font-size: 50px;
+    font-size: 30px;
+    font-family: 'Anton', sans-serif;
 }
 
 h3 {
-    font-family: "Ubuntu Mono";
+    font-family: 'Montserrat', sans-serif;
+    font-size: 16px;
+    margin-top: 10px;
+    font-weight: 800;
 }
 
 .principal {
     display: flex;
     flex-direction: row;
-    justify-content: space-around;
-    gap: 100px;
-    justify-content: center;
-    padding: 30px;
+    gap: 30px;
     margin-left: 20%;
-    margin-right: 20%;
-    border-radius: 30px;
 }
 
 .introduction {
-    text-align: center;
-    margin-top: 3%;
+    text-align: left;
 }
 
 #perfil {
-    width: 160px;
-    height: 160px;
-    border-radius: 50%;
-}
-
-h5 {
-    margin-top: 10px;
-    font-size: 18px;
+    width: 180px;
+    height: 180px;
+    box-shadow: 7px 7px;
 }
 
 .contact {
@@ -98,27 +98,24 @@ h5 {
     margin-top: 40px;
     display: flex;
     flex-direction: row;
-    justify-content: space-around;
-    gap: 60px;
     justify-content: center;
-    font-family: "Ubuntu Mono";
+    margin-left: 2%;
+    gap: 50px;
 }
 
-h2 {
-    margin-bottom: 10px;
-    font-family: "Asap";
-}
-
-li {
+li,ol {
     font-weight: 400;
-    font-size: 24px;
+    font-size: 16px;
 }
 
-.projects, .languages {
-    background-color: rgb(185, 191, 190);
-    padding: 30px;
-    border-radius: 30px;
-    border: dashed 2px rgb(61, 137, 135);
+.projects {
+    padding: 10px;
+    text-align: left;
+
+}
+.languages {
+    padding: 10px;
+    text-align: center;
 }
 
 .progImages {
@@ -127,23 +124,25 @@ li {
     flex-direction: column;
     gap: 30px;
 }
+
 .images {
     display: flex;
     justify-content: center;
+    gap: 10px;
 }
 
 #js {
-    width: 70px;
+    width: 50px;
     height: 50px;
     
 }
-#html {
+#ts {
     width: 50px;
     height: 50px;
     
 }
 #react {
-    width: 50.5px;
+    width: 55px;
     height: 50px;
     
 }
@@ -152,8 +151,16 @@ li {
     height: 50px;
     
 }
-#java {
-    width: 80px;
-    height: 80px;
-   margin-top: -20px;
+#c {
+    width: 45px;
+    height: 50px;
+}
+#css {
+    width: 50px;
+    height: 47px;
+}
+#html {
+    width: 60px;
+    height: 50px;
+    margin-left: -10px;
 }
