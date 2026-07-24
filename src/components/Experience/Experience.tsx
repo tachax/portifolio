@@ -4,12 +4,12 @@ import styles from './Experience.module.css';
 
 function Experience() {
   return (
-    <section className={styles.experience} id="#experience">
-      <span className={styles.label}>// 02 — EXPERIENCE</span>
-      <h2 className={styles.heading}>
+    <section className={styles.experience} id="experience">
+      <span className="section-label">// 02 — EXPERIENCE</span>
+      <h2 className="section-heading">
         Where I've
         <br />
-        <span className={styles.headingGreen}>Made an Impact</span>
+        <span className="section-heading-green">Made an Impact</span>
       </h2>
 
       <div className={styles.timeline}>

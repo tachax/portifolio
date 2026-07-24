@@ -2,25 +2,6 @@
   padding: var(--section-padding-y) var(--section-padding-x);
 }
 
-.label {
-  font-family: monospace;
-  font-size: 13px;
-  color: var(--color-accent);
-  letter-spacing: 1px;
-}
-
-.heading {
-  font-size: 48px;
-  font-size: var(--font-heading-lg);
-  line-height: 1.1;
-  margin: 12px 0 16px;
-  color: var(--color-text-dark);
-}
-
-.headingGreen {
-  color: var(--color-green-dark);
-}
-
 .subtext {
   font-size: 15px;
   color: var(--color-text-muted);
