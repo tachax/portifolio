@@ -1,0 +1,26 @@
+.footer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 40px var(--section-padding-x);
+  border-top: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+.logo {
+  font-size: 18px;
+  font-weight: 800;
+  color: var(--color-text-dark);
+}
+
+.text {
+  font-size: 13px;
+  color: var(--color-text-muted);
+}
+
+@media (max-width: 768px) {
+  .footer {
+    flex-direction: column;
+    gap: 12px;
+    text-align: center;
+  }
+}
