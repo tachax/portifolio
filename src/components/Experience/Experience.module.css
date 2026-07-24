@@ -1,0 +1,56 @@
+.experience {
+  padding: var(--section-padding-y) var(--section-padding-x);
+}
+
+.label {
+  font-family: monospace;
+  font-size: 13px;
+  color: var(--color-accent);
+  letter-spacing: 1px;
+}
+
+.heading {
+  font-size: var(--font-heading-lg);
+  font-weight: 800;
+  line-height: 1.1;
+  margin: 12px 0 48px;
+  color: var(--color-text-dark);
+}
+
+.headingGreen {
+  color: var(--color-green-dark);
+}
+
+.timeline {
+  display: flex;
+  flex-direction: column;
+}
+
+.timelineItem {
+  display: flex;
+  gap: 24px;
+}
+
+.dotColumn {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 16px;
+  flex-shrink: 0;
+}
+
+.dot {
+  width: 14px;
+  height: 14px;
+  border-radius: 50%;
+  background-color: var(--color-green-dark);
+  margin-top: 32px;
+  flex-shrink: 0;
+}
+
+.line {
+  width: 2px;
+  flex: 1;
+  background-color: rgba(0, 0, 0, 0.15);
+  margin-top: 4px;
+}

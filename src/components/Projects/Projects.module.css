@@ -1,5 +1,5 @@
 .projects {
-  padding: 100px 60px;
+  padding: var(--section-padding-y) var(--section-padding-x);
 }
 
 .label {
@@ -11,7 +11,7 @@
 
 .heading {
   font-size: 48px;
-  font-weight: 800;
+  font-size: var(--font-heading-lg);
   line-height: 1.1;
   margin: 12px 0 16px;
   color: var(--color-text-dark);

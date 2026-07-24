@@ -12,6 +12,12 @@
   --radius-lg: 16px;
   --radius-md: 10px;
 
+  --section-padding-y: 100px;
+  --section-padding-x: 200px;
+
+  --font-heading-lg: 48px;
+  --font-heading-xl: 72px; 
+
   --font-main: 'Inter', system-ui, sans-serif;
 }
 

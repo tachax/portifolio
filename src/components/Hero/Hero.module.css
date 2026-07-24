@@ -2,7 +2,7 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: 100px 60px;
+  padding: var(--section-padding-y) var(--section-padding-x);
   min-height: 80vh;
   position: relative;
   overflow: hidden;
