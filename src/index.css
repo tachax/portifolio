@@ -51,3 +51,12 @@ body {
 .section-heading-green {
   color: var(--color-green-dark);
 }
+
+@media (max-width: 768px) {
+  :root {
+    --section-padding-x: 24px;
+    --section-padding-y: 60px;
+    --font-heading-lg: 32px;
+    --font-heading-xl: 44px;
+  }
+}

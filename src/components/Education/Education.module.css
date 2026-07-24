@@ -1,0 +1,153 @@
+.education {
+  padding: var(--section-padding-y) var(--section-padding-x);
+}
+
+.highlightCard {
+  position: relative;
+  background-color: var(--color-green-dark);
+  border-radius: var(--radius-lg);
+  padding: 32px;
+  overflow: hidden;
+  margin-bottom: 20px;
+}
+
+.highlightCard .school {
+  color: white;
+}
+
+.highlightCard .location {
+  color: rgba(255, 255, 255, 0.7);
+}
+
+.status {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  padding: 6px 14px;
+  background-color: rgba(255, 255, 255, 0.1);
+  border-radius: 999px;
+  font-family: monospace;
+  font-size: 13px;
+  color: var(--color-accent);
+  margin-bottom: 16px;
+}
+
+.status .dot {
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  background-color: var(--color-accent);
+}
+
+.degree {
+  font-size: 26px;
+  font-weight: 700;
+  color: white;
+  margin-bottom: 4px;
+}
+
+.watermark {
+  position: absolute;
+  right: -10px;
+  top: 50%;
+  transform: translateY(-50%);
+  font-size: 100px;
+  font-weight: 800;
+  color: rgba(255, 255, 255, 0.08);
+}
+
+.card {
+  position: relative;
+  background-color: var(--color-bg-light);
+  border-radius: var(--radius-lg);
+  padding: 32px;
+  overflow: hidden;
+  margin-bottom: 40px;
+}
+
+.completedLabel {
+  font-family: monospace;
+  font-size: 12px;
+  color: var(--color-green);
+  letter-spacing: 0.5px;
+}
+
+.card .degree {
+  color: var(--color-text-dark);
+  margin-top: 8px;
+}
+
+.school {
+  font-size: 15px;
+  font-weight: 600;
+  color: var(--color-text-dark);
+}
+
+.location {
+  font-size: 14px;
+  color: var(--color-text-muted);
+}
+
+.watermarkLight {
+  position: absolute;
+  right: -10px;
+  top: 50%;
+  transform: translateY(-50%);
+  font-size: 100px;
+  font-weight: 800;
+  color: rgba(0, 0, 0, 0.05);
+}
+
+.certGrid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  gap: 20px;
+}
+
+.certCard {
+  background-color: var(--color-bg-light);
+  border-radius: var(--radius-lg);
+  padding: 24px;
+}
+
+.credlyBadge {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  padding: 4px 12px;
+  background-color: rgba(201, 150, 58, 0.15);
+  color: var(--color-accent);
+  border: 1px solid rgba(201, 150, 58, 0.3);
+  border-radius: 999px;
+  font-size: 11px;
+  font-family: monospace;
+  margin-bottom: 12px;
+}
+
+.certIcon {
+  color: var(--color-accent);
+  margin-bottom: 12px;
+}
+
+.certName {
+  font-size: 15px;
+  font-weight: 700;
+  color: var(--color-text-dark);
+  margin-bottom: 4px;
+}
+
+.certIssuer {
+  font-size: 13px;
+  color: var(--color-text-muted);
+}
+
+@media (max-width: 768px) {
+  .watermark,
+  .watermarkLight {
+    display: none;
+  }
+
+  .certGrid {
+    grid-template-columns: 1fr;
+  }
+}
