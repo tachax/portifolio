@@ -13,7 +13,7 @@
 .logo {
   font-size: 20px;
   font-weight: 800;
-  color: var(--color-text-dark)
+  color: var(--color-text-dark);
 }
 
 .nav {
@@ -29,12 +29,13 @@
 }
 
 .nav a:hover {
-  color: var(--color-green-dark)
+  color: var(--color-green-dark);
 }
 
 .socials {
   display: flex;
-  gap: 10px
+  align-items: center;
+  gap: 10px;
 }
 
 .socials a {
@@ -54,4 +55,59 @@
   background-color: var(--color-green-dark);
   color: white;
   border-color: var(--color-green-dark);
+}
+
+.menuButton {
+  display: none;
+  align-items: center;
+  justify-content: center;
+  width: 38px;
+  height: 38px;
+  background-color: var(--color-text-dark);
+  border: 1px solid var(--color-text-dark);
+  border-radius: var(--radius-md);
+  color: var(--color-bg);
+  cursor: pointer;
+}
+
+.mobileNav {
+  display: none;
+}
+
+@media (max-width: 768px) {
+  .header {
+    padding: 16px 24px;
+    flex-wrap: wrap;
+  }
+
+  .nav {
+    display: none;
+  }
+
+  .menuButton {
+    display: flex;
+  }
+
+  .mobileNav {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    gap: 4px;
+    padding-top: 16px;
+    margin-top: 16px;
+    border-top: 1px solid rgba(0, 0, 0, 0.1);
+  }
+
+  .mobileNav a {
+    text-decoration: none;
+    color: var(--color-text-dark);
+    font-size: 16px;
+    font-weight: 500;
+    padding: 12px 8px;
+    border-radius: var(--radius-md);
+  }
+
+  .mobileNav a:hover {
+    background-color: rgba(0, 0, 0, 0.04);
+  }
 }

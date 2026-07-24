@@ -20,10 +20,10 @@ function Hero() {
         </p>
 
         <p className={styles.bio}>
-          I build software to impact people. From clinical research platform
+          I like to build software to impact people :) From clinical research platform
           to enterprise tools at scale. USF Computer Science graduate, 
-          now heading into a Master's program in Fall 2026
-          to push the frontier further. Fluent in English and Portuguese,
+          now heading into a Master's program in Fall 2026. 
+          Fluent in English and Portuguese,
           currently in Tampa, FL.
         </p>
 
@@ -45,6 +45,13 @@ function Hero() {
             <span className={styles.statValue}>1900+</span>
             <span className={styles.statLabel}>Users reached</span>
           </div>
+        </div>  
+      </div>
+
+      <div className={styles.photoWrapper}>
+        <div className={styles.photoRing} />
+        <div className={styles.photoCircle}>
+          <img src="/profile.jpg" alt="Natacha Angheben" className={styles.photo} />
         </div>
       </div>
     </section>

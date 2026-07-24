@@ -86,3 +86,24 @@
   border-radius: 50%;
   background-color: var(--color-text-muted);
 }
+
+@media (max-width: 768px) {
+  .card {
+    padding: 20px;
+    margin-left: 26px;
+  }
+
+  .header {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 12px;
+  }
+
+  .meta {
+    align-items: flex-start;
+  }
+
+  .role {
+    font-size: 18px;
+  }
+}

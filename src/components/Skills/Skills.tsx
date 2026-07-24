@@ -7,9 +7,9 @@ function Skills() {
     <section className={styles.skills} id="skills">
       <span className="section-label">// SKILLS</span>
       <h2 className="section-heading">
-        Tools of
+        My Tech
         <br />
-        <span className="section-heading-green">My Trade</span>
+        <span className="section-heading-green">Stack</span>
       </h2>
 
       <div className={styles.grid}>

@@ -7,3 +7,13 @@
   grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
   gap: 24px;
 }
+
+@media (max-width: 768px) {
+  .skills {
+    padding: var(--section-padding-y) 24px;
+  }
+
+  .grid {
+    grid-template-columns: 1fr;
+  }
+}

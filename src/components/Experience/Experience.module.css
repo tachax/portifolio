@@ -35,3 +35,18 @@
   background-color: rgba(0, 0, 0, 0.15);
   margin-top: 4px;
 }
+
+@media (max-width: 768px) {
+  .experience {
+    padding: var(--section-padding-y) 24px;
+  }
+
+  .timeline::before {
+    left: 5px;
+  }
+
+  .dot {
+    width: 10px;
+    height: 10px;
+  }
+}
