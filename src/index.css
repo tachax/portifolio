@@ -1,0 +1,28 @@
+:root {
+  --color-bg: #EAE6D9;
+  --color-bg-light: #F2EFE4;
+
+  --color-green-dark: #2D4A3A;
+  --color-green: #3D5F4B;
+  --color-accent: #C9963A;
+
+  --color-text-dark: #1A1A1A;
+  --color-text-muted: #6B6B5F;
+
+  --radius-lg: 16px;
+  --radius-md: 10px;
+
+  --font-main: 'Inter', system-ui, sans-serif;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: var(--color-bg);
+  color: var(--color-text-dark);
+  font-family: var(--font-main);
+}
