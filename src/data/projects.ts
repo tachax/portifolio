@@ -1,4 +1,4 @@
-import { FaBrain, FaGlobe, FaBolt, FaRobot } from 'react-icons/fa';
+import { FaBrain, FaGlobe } from 'react-icons/fa';
 import type { IconType } from 'react-icons';
 
 export interface Project {

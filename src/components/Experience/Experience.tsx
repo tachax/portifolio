@@ -13,7 +13,7 @@ function Experience() {
       </h2>
 
       <div className={styles.timeline}>
-        {experiences.map((item, index) => (
+        {experiences.map((item) => (
           <div key={item.id} className={styles.timelineItem}>
             <div className={styles.dotColumn}>
               <span className={styles.dot} />
