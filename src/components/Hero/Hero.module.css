@@ -1,0 +1,124 @@
+.hero {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 100px 60px;
+  min-height: 80vh;
+  position: relative;
+  overflow: hidden;
+}
+
+.content {
+  max-width: 620px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  z-index: 1;
+}
+
+.badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  width: fit-content;
+  padding: 8px 16px;
+  border:  1px solid rgba(0, 0, 0, 0.15);
+  border-radius: 999px;
+  font-size: 13px;
+  font-family: monospace;
+  color: var(--color-text-muted);
+  background-color: rgba(61, 95, 75, 0.08);
+}
+
+.dot {
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  background-color: var(--color-text-muted);
+}
+
+.name {
+  font-size: 72px;
+  font-weight: 800;
+  line-height: 1.05;
+  color: var(--color-text-dark);
+}
+
+.nameGreen {
+  color: var(--color-green-dark);
+}
+
+.dotAccent {
+  color: var(--color-accent);   
+}
+
+.subtitle {
+  font-size: 20px;
+  font-weight: 600;
+  color: var(--color-green-dark);
+}
+
+.bio {
+  font-size: 16px;
+  line-height: 1.6;
+  color: var(--color-text-muted);
+  max-width: 560px;
+}
+
+.actions {
+  display: flex;
+  gap: 16px;
+  margin-top: 12px;
+}
+
+.primaryButton {
+  padding: 14px 28px;
+  background-color: var(--color-green-dark);
+  color: white;
+  border-radius: var(--radius-md);
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 15px;
+}
+
+.primaryButton:hover {
+  opacity: 0.9;
+}
+
+.secondaryButton {
+  padding: 14px 28px;
+  background-color: transparent;
+  color: var(--color-text-dark);
+  border: 1px solid rgba(0, 0, 0, 0.2);
+  border-radius: var(--radius-md);
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 15px;
+}
+
+.secondaryButton:hover {
+  border-color: var(--color-green-dark); 
+  color: var(--color-green-dark); 
+}
+
+.stats {
+  display: flex;
+  gap: 40px;
+  margin-top: 20px;
+}
+
+.stat {
+  display: flex;
+  flex-direction: column;
+}
+
+.statValue {
+  font-size: 28px;
+  font-weight: 800;
+  color: var(--color-text-dark);
+}
+
+.statLabel {
+  font-size: 13px;
+  color: var(--color-text-muted);
+}
