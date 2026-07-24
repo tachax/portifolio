@@ -25,7 +25,7 @@ const certificates = [
 function Education() {
   return (
     <section className={styles.education} id="education">
-      <span className="section-label">// 04 — EDUCATION</span>
+      <span className="section-label">// EDUCATION</span>
       <h2 className="section-heading">
         The Foundations
         <br />

@@ -1,7 +1,7 @@
 .cardContainer {
   perspective: 1200px;
   cursor: pointer;
-  height: 240px;
+  height: 280px;
 }
 
 .card {
@@ -18,7 +18,7 @@
 
 .face {
   position: absolute;
-  inset: 0;
+  /* inset: 0; */
   backface-visibility: hidden;
   border-radius: var(--radius-lg);
   padding: 24px;

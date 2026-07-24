@@ -5,7 +5,7 @@ import styles from './Experience.module.css';
 function Experience() {
   return (
     <section className={styles.experience} id="experience">
-      <span className="section-label">// 02 — EXPERIENCE</span>
+      <span className="section-label">// EXPERIENCE</span>
       <h2 className="section-heading">
         Where I've
         <br />

@@ -18,6 +18,6 @@ export const skillGroups: SkillGroup[] = [
   {
     id: 'spoken',
     title: 'Languages',
-    items: ['English — Fluent', 'Portuguese — Fluent', 'Spanish — Beginner', 'Italian — Beginner'],
+    items: ['English - Fluent', 'Portuguese - Fluent', 'Spanish - Beginner', 'Italian - Beginner'],
   },
 ];

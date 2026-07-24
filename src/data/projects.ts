@@ -38,28 +38,28 @@ export const projects: Project[] = [
     tags: ['React', 'TypeScript', 'Node.js', 'REST API'],
     variant: 'green',
   },
-  {
-    id: 'enterprise-content',
-    category: 'ENTERPRISE · INTERNSHIP',
-    icon: FaBolt,
-    title: 'Enterprise Content Platform',
-    org: 'TELUS Digital',
-    date: 'Jun – Aug 2025',
-    description:
-      'Refactored document handling on a React-based enterprise platform for scalable content workflows. Fixed critical stepper state logic and resolved Sentry-reported client-side production errors.',
-    tags: ['React', 'TypeScript', 'Sentry', 'Jest', 'CSS'],
-    variant: 'gold',
-  },
-  {
-    id: 'chatbot-data',
-    category: 'FULL-STACK · INTERNSHIP',
-    icon: FaRobot,
-    title: 'Chatbot Data Platform',
-    org: 'TELUS Digital · Brazil',
-    date: 'Jun – Aug 2024',
-    description:
-      'Built a full-stack feature for managing conversation data in a chatbot platform. Integrated React frontend with database operations and improved automated test efficiency by 8+ hours.',
-    tags: ['React', 'TypeScript', 'TypeORM', 'Jest', 'PostgreSQL'],
-    variant: 'green',
-  },
+  // {
+  //   id: 'enterprise-content',
+  //   category: 'ENTERPRISE · INTERNSHIP',
+  //   icon: FaBolt,
+  //   title: 'Enterprise Content Platform',
+  //   org: 'TELUS Digital',
+  //   date: 'Jun – Aug 2025',
+  //   description:
+  //     'Refactored document handling on a React-based enterprise platform for scalable content workflows. Fixed critical stepper state logic and resolved Sentry-reported client-side production errors.',
+  //   tags: ['React', 'TypeScript', 'Sentry', 'Jest', 'CSS'],
+  //   variant: 'gold',
+  // },
+  // {
+  //   id: 'chatbot-data',
+  //   category: 'FULL-STACK · INTERNSHIP',
+  //   icon: FaRobot,
+  //   title: 'Chatbot Data Platform',
+  //   org: 'TELUS Digital · Brazil',
+  //   date: 'Jun – Aug 2024',
+  //   description:
+  //     'Built a full-stack feature for managing conversation data in a chatbot platform. Integrated React frontend with database operations and improved automated test efficiency by 8+ hours.',
+  //   tags: ['React', 'TypeScript', 'TypeORM', 'Jest', 'PostgreSQL'],
+  //   variant: 'green',
+  // },
 ];

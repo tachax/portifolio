@@ -20,7 +20,7 @@ function ProjectCard({ project }: ProjectCardProps) {
       <div className={`${styles.card} ${isFlipped ? styles.flipped : ''}`}>
         <div className={`${styles.face} ${styles.front} ${styles[project.variant]}`}>
           <span className={styles.category}>{project.category}</span>
-          <span className={styles.icon}><Icon /></span>
+          <span className={styles.icon}><Icon/></span>
           <h3 className={styles.title}>{project.title}</h3>
           <p className={styles.org}>{project.org}</p>
           <p className={styles.date}>{project.date}</p>

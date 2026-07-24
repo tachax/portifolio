@@ -5,7 +5,7 @@ import styles from './Skills.module.css';
 function Skills() {
   return (
     <section className={styles.skills} id="skills">
-      <span className="section-label">// 03 — SKILLS</span>
+      <span className="section-label">// SKILLS</span>
       <h2 className="section-heading">
         Tools of
         <br />

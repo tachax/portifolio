@@ -16,7 +16,7 @@ function Hero() {
         </h1>
 
         <p className={styles.subtitle}>
-          Full-Stack Developer · CS Graduate · MS Student
+          Software Developer · BSCS Graduate · MS Student
         </p>
 
         <p className={styles.bio}>
