@@ -6,7 +6,7 @@ function Hero() {
       <div className={styles.content}>
         <span className={styles.badge}>
           <span className={styles.dot}></span>
-          open to opportunities · Fall 2026
+          open to opportunities · 2027
         </span>
 
         <h1 className={styles.name}>
