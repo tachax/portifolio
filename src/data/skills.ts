@@ -13,7 +13,7 @@ export const skillGroups: SkillGroup[] = [
   {
     id: 'tools',
     title: 'Technologies & Tools',
-    items: ['React', 'Node.js', 'PostgreSQL', 'SQL', 'Git', 'GitHub', 'Docker', 'Linux', 'Agile'],
+    items: ['React.js', 'Node.js', 'PostgreSQL', 'SQL', 'Git', 'GitHub', 'Docker', 'Linux', 'Agile', 'Jest', 'Firebase'],
   },
   {
     id: 'spoken',

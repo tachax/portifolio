@@ -9,6 +9,12 @@ const certificates = [
     hasCredlyBadge: true,
   },
   {
+    id: 'userexperience',
+    name: 'Foundations of User Experience (UX) Design ',
+    issuer: 'Google - Coursera',
+    hasCredlyBadge: false,
+  },
+  {
     id: 'cybersecurity',
     name: 'Cybersecurity Essentials',
     issuer: 'Cisco Networking Academy',
@@ -35,7 +41,7 @@ function Education() {
       <div className={styles.highlightCard}>
         <span className={styles.status}>
           <span className={styles.dot} />
-          Starting Fall 2026
+          Expected May 2028
         </span>
         <h3 className={styles.degree}>M.S. Computer Science</h3>
         <p className={styles.school}>University of South Florida</p>
