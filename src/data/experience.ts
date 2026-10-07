@@ -11,6 +11,19 @@ export interface ExperienceItem {
 
 export const experiences: ExperienceItem[] = [
   {
+    id: 'usf-ot',
+    role: 'Operational Technology Infrastructure Developer',
+    company: 'University of South Florida',
+    location: 'Tampa, FL, USA',
+    date: 'Aug 2026 – Present',
+    badge: 'Part-time',
+    badgeVariant: 'green',
+    bullets: [
+      'Validated 300+ HVAC data points by verifying point types, live values, and engineering units against the legacy system, identifying and correcting 10 configuration discrepancies before deployment.',
+      'Applied UX design principles to HVAC device displays by organizing critical points (temperatures, setpoints, alarms) for fast readability, reducing the time operators need to locate key information by 80%.',
+    ],
+  },
+  {
     id: 'usf-research',
     role: 'Research Assistant Developer',
     company: 'University of South Florida',
@@ -19,9 +32,9 @@ export const experiences: ExperienceItem[] = [
     badge: 'Research',
     badgeVariant: 'green',
     bullets: [
-      'Designed and developed a full-stack web platform for clinical cognitive research using React and Firebase, applying UX best practices for older adults and individuals with MCI.',
-      'Implemented a music attention task with real-time reaction time recording relative to musical theme onset and offset timestamps.',
-      'Deployed two independent study conditions to Firebase Hosting via GitHub Actions CI/CD pipeline, maintaining separate React branches for controlled experimental conditions.',
+      'Designed and built a responsive end-to-end full-stack web platform for cognitive research using React and Firebase by aligning with stakeholders to define requirements and applying UX best practices for participants with disabilities.',
+      'Developed a reaction time recording system synchronized with musical theme onset and offset timestamps, enabling accurate behavioral data collection for cognitive research.',
+      'Built an admin dashboard enabling researchers to view participant response data and export it to Excel, removing the need for manual database queries.',
     ],
   },
   {
@@ -33,9 +46,9 @@ export const experiences: ExperienceItem[] = [
     badge: 'Internship',
     badgeVariant: 'gold',
     bullets: [
-      'Enhanced a React-based platform by refactoring document handling and improving system reliability, enabling more scalable content workflows across enterprise tools.',
-      'Resolved stepper state logic bug in a multi-stage job application workflow by replacing step categorization from name-based grouping to index-based tracking.',
-      'Debugged client-side production errors reported in Sentry logs by reproducing failures across multiple environments and removing an obsolete CSS file.',
+      'Independently learned TinyMCE’s plugin architecture to implement resizable PDF embeds within a rich-text editor, quickly ramping up on an unfamiliar framework to meet a deadline.',
+      'Resolved a stepper state logic bug in a multi-stage job application workflow by replacing step categorization from name-based grouping to index-based tracking, ensuring accurate progress indicators across dynamic exam steps, covered by unit tests.',
+      'Debugged client-side production errors reported in Sentry logs and browser developer tools by collaborating with engineers, PMs, and QA to reproduce failures across multiple environments, restoring platform stability.',
     ],
   },
   {
@@ -47,9 +60,9 @@ export const experiences: ExperienceItem[] = [
     badge: 'Internship',
     badgeVariant: 'gold',
     bullets: [
-      'Built a full-stack feature for a chatbot platform to manage conversation data, integrating React frontend with backend database operations and improving automated test efficiency by 8+ hours.',
-      'Executed a database migration to remove orphaned records and resolve data inconsistencies in a large-scale relational schema.',
-      'Developed using TypeScript, TypeORM, React, and Jest, ensuring maintainable code and reliable unit test coverage.',
+      'Built and shipped a full-stack feature end-to-end for a chatbot platform to manage conversation data, developing both the React frontend and the REST API endpoint with database logic, saving 8+ hours of manual testing per release cycle.',
+      'Executed a database migration to remove orphaned records and resolve data inconsistencies in a company-wide relational database, improving data integrity for internal systems used across the organization.',
+      'Developed using TypeScript, TypeORM, React, and Jest, writing and maintaining unit and integration tests and shipping through peer code review to ensure production-ready code.',
     ],
   },
   {
