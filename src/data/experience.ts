@@ -12,7 +12,7 @@ export interface ExperienceItem {
 export const experiences: ExperienceItem[] = [
   {
     id: 'usf-ot',
-    role: 'Operation Technology Infrastructure Developer',
+    role: 'Operational Technology Infrastructure Developer',
     company: 'University of South Florida',
     location: 'Tampa, FL, USA',
     date: 'Aug 2026 – Present',
