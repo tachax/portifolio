@@ -1,0 +1,63 @@
+.thermostat {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  height: 38px;
+  padding: 0 12px;
+  background-color: var(--color-bg-light);
+  border: 1px solid var(--color-border-strong);
+  border-radius: 999px;
+  color: var(--color-text-dark);
+  cursor: pointer;
+  font-family: inherit;
+  transition: border-color 0.3s, box-shadow 0.3s;
+}
+
+.display {
+  font-family: monospace;
+  font-size: 15px;
+  font-weight: 700;
+  min-width: 2ch;
+}
+
+.unit {
+  font-size: 11px;
+  opacity: 0.7;
+  margin-left: 1px;
+}
+
+.icon {
+  display: flex;
+  font-size: 14px;
+  transition: transform 0.5s ease;
+}
+
+.warm .icon {
+  color: var(--color-accent);
+}
+
+.cool .icon {
+  color: var(--color-green-text);
+  transform: rotate(180deg);
+}
+
+.warm:hover {
+  border-color: var(--color-accent);
+  box-shadow: 0 0 0 3px rgba(201, 150, 58, 0.15);
+}
+
+.cool:hover {
+  border-color: var(--color-green-text);
+  box-shadow: 0 0 0 3px rgba(143, 193, 163, 0.15);
+}
+
+@media (max-width: 768px) {
+  .thermostat {
+    gap: 6px;
+    padding: 0 10px;
+  }
+
+  .unit {
+    display: none;
+  }
+}

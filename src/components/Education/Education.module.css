@@ -95,7 +95,7 @@
   transform: translateY(-50%);
   font-size: 100px;
   font-weight: 800;
-  color: rgba(0, 0, 0, 0.05);
+  color: var(--color-watermark);
 }
 
 .certGrid {

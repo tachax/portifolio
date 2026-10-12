@@ -32,7 +32,7 @@
 .line {
   width: 2px;
   flex: 1;
-  background-color: rgba(0, 0, 0, 0.15);
+  background-color: var(--color-border-strong);
   margin-top: 4px;
 }
 

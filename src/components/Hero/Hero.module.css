@@ -6,7 +6,7 @@
   min-height: 80vh;
   position: relative;
   overflow: hidden;
-  background-image: radial-gradient(circle, rgba(0, 0, 0, 0.12) 1px, transparent 1px);
+  background-image: radial-gradient(circle, var(--color-dot) 1px, transparent 1px);
   background-size: 24px 24px;
 }
 
@@ -24,7 +24,7 @@
   gap: 8px;
   width: fit-content;
   padding: 8px 16px;
-  border:  1px solid rgba(0, 0, 0, 0.15);
+  border:  1px solid var(--color-border-strong);
   border-radius: 999px;
   font-size: 13px;
   font-family: monospace;
@@ -47,7 +47,7 @@
 }
 
 .nameGreen {
-  color: var(--color-green-dark);
+  color: var(--color-green-text);
 }
 
 .dotAccent {
@@ -57,7 +57,7 @@
 .subtitle {
   font-size: 20px;
   font-weight: 600;
-  color: var(--color-green-dark);
+  color: var(--color-green-text);
 }
 
 .bio {
@@ -91,7 +91,7 @@
   padding: 14px 28px;
   background-color: transparent;
   color: var(--color-text-dark);
-  border: 1px solid rgba(0, 0, 0, 0.2);
+  border: 1px solid var(--color-border-strong);
   border-radius: var(--radius-md);
   text-decoration: none;
   font-weight: 600;
@@ -99,8 +99,8 @@
 }
 
 .secondaryButton:hover {
-  border-color: var(--color-green-dark); 
-  color: var(--color-green-dark); 
+  border-color: var(--color-green-text); 
+  color: var(--color-green-text); 
 }
 
 .stats {
@@ -136,7 +136,7 @@
 .photoRing {
   position: absolute;
   inset: -14px;
-  border: 1px dashed rgba(45, 74, 58, 0.3);
+  border: 1px dashed var(--color-ring);
   border-radius: 50%;
 }
 

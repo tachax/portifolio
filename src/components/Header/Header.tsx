@@ -2,6 +2,7 @@ import { useState } from 'react';
 import { FaLinkedinIn, FaGithub, FaRegFileAlt } from 'react-icons/fa';
 import { IoCloseOutline, IoMenuOutline } from "react-icons/io5";
 import { GoMail } from "react-icons/go";
+import ThermostatToggle from './ThermostatToggle';
 import styles from './Header.module.css'
 
 function Header() {
@@ -21,6 +22,7 @@ function Header() {
       </nav>
 
       <div className={styles.socials}>
+        <ThermostatToggle />
         <a href="https://www.linkedin.com/in/natachapangheben" target="_blank" rel="noopener noreferrer">
           <FaLinkedinIn size={18} />
         </a>
