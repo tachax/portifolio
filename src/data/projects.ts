@@ -11,6 +11,11 @@ export interface Project {
   description: string;
   tags: string[];
   variant: 'green' | 'gold';
+  demo?: {
+    label: string;
+    src: string; // path in /public (e.g. /videos/x.mp4) or a Google Drive /preview link
+    poster?: string;
+  };
 }
 
 export const projects: Project[] = [
@@ -22,7 +27,7 @@ export const projects: Project[] = [
     org: 'University of South Florida',
     date: 'Mar 2026 – Present',
     description:
-      'Full-stack web platform for clinical cognitive research, designed with UX best practices to serve older adults and individuals with MCI. Built with React and Firebase, deployed via CI/CD.',
+      'Full-stack React/Firebase app for 2 experimental workflows in an 18-session cognitive study, with reaction-time recording synced to music timestamps and an admin dashboard with bulk Excel export.',
     tags: ['React', 'Firebase', 'GitHub Actions', 'UX Research', 'Accessibility'],
     variant: 'green',
   },
@@ -34,9 +39,13 @@ export const projects: Project[] = [
     org: 'Brazilian Student Association',
     date: 'May 2023 – Aug 2024',
     description:
-      'Web application serving 1,900+ participants and employers across 3 BRASA events. Features a full workshop registration system with real-time availability, conflict detection, and cancellation flows.',
-    tags: ['React', 'TypeScript', 'Node.js', 'REST API'],
+      'Conference web app for 3 BRASA events with 1,900+ participants and employers. Built workshop selection, registration, and cancellation, supporting ~300 registrations across 8 workshops.',
+    tags: ['React', 'TypeScript', 'AWS S3', 'REST API'],
     variant: 'green',
+    demo: {
+      label: 'Take a quick peek at the registration feature I built',
+      src: '/videos/brasa-registration.mp4',
+    },
   },
   // {
   //   id: 'enterprise-content',
@@ -46,8 +55,8 @@ export const projects: Project[] = [
   //   org: 'TELUS Digital',
   //   date: 'Jun – Aug 2025',
   //   description:
-  //     'Refactored document handling on a React-based enterprise platform for scalable content workflows. Fixed critical stepper state logic and resolved Sentry-reported client-side production errors.',
-  //   tags: ['React', 'TypeScript', 'Sentry', 'Jest', 'CSS'],
+  //     'Delivered resizable PDF embeds via TinyMCE plugins, fixed job-application progress tracking across 10 exam-sequence scenarios, and resolved 2 production defects with Sentry.',
+  //   tags: ['React', 'TypeScript', 'TinyMCE', 'Sentry', 'Jest'],
   //   variant: 'gold',
   // },
   // {
@@ -58,7 +67,7 @@ export const projects: Project[] = [
   //   org: 'TELUS Digital · Brazil',
   //   date: 'Jun – Aug 2024',
   //   description:
-  //     'Built a full-stack feature for managing conversation data in a chatbot platform. Integrated React frontend with database operations and improved automated test efficiency by 8+ hours.',
+  //     'Shipped a React/REST API bulk-delete feature for conversations, saving ~8 hours of manual testing per release, plus a database migration to clean orphaned records.',
   //   tags: ['React', 'TypeScript', 'TypeORM', 'Jest', 'PostgreSQL'],
   //   variant: 'green',
   // },

@@ -1,0 +1,14 @@
+# Netlify security headers — https://docs.netlify.com/routing/headers/
+/*
+  # Only load resources from this site; Google Drive is allowed for video embeds
+  Content-Security-Policy: default-src 'self'; script-src 'self'; style-src 'self' 'unsafe-inline'; img-src 'self' data:; media-src 'self'; frame-src https://drive.google.com; object-src 'none'; base-uri 'self'; form-action 'self'; frame-ancestors 'none'
+  # Block other sites from embedding this page in an iframe (clickjacking)
+  X-Frame-Options: DENY
+  # Don't let browsers guess file types
+  X-Content-Type-Options: nosniff
+  # Only send the domain (not the full URL) when visitors click external links
+  Referrer-Policy: strict-origin-when-cross-origin
+  # Turn off browser features this site doesn't use
+  Permissions-Policy: camera=(), microphone=(), geolocation=(), payment=(), usb=()
+  # Always use HTTPS
+  Strict-Transport-Security: max-age=31536000; includeSubDomains
