@@ -5,8 +5,7 @@
   try {
     theme = localStorage.getItem('theme');
   } catch {}
-  if (theme !== 'light' && theme !== 'dark') {
-    theme = window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light';
-  }
+  
+  if (theme !== 'dark') theme = 'light';
   document.documentElement.dataset.theme = theme;
 })();
