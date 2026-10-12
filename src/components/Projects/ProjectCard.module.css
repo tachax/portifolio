@@ -1,7 +1,7 @@
 .cardContainer {
   perspective: 1200px;
   cursor: pointer;
-  height: 280px;
+  height: 320px;
 }
 
 .card {
@@ -90,4 +90,32 @@
   padding: 4px 10px;
   border: 1px solid rgba(0, 0, 0, 0.15);
   border-radius: var(--radius-md);
+}
+
+.demoButton {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin-top: 14px;
+  padding: 8px 14px;
+  font-family: inherit;
+  font-size: 13px;
+  font-weight: 600;
+  text-align: left;
+  color: white;
+  background-color: var(--color-green-dark);
+  border: none;
+  border-radius: var(--radius-md);
+  cursor: pointer;
+  transition: background-color 0.2s, transform 0.2s;
+}
+
+.demoButton:hover {
+  background-color: var(--color-accent);
+  transform: translateY(-1px);
+}
+
+.demoIcon {
+  flex-shrink: 0;
+  font-size: 11px;
 }

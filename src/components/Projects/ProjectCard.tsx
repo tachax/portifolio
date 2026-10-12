@@ -1,5 +1,7 @@
-import { useState } from "react";
+import { useCallback, useState } from "react";
+import { FaPlay } from 'react-icons/fa';
 import type { Project } from '../../data/projects'
+import DemoModal from './DemoModal';
 import styles from './ProjectCard.module.css'
 
 interface ProjectCardProps {
@@ -8,9 +10,12 @@ interface ProjectCardProps {
 
 function ProjectCard({ project }: ProjectCardProps) {
   const [isFlipped, setIsFlipped] = useState(false);
+  const [isDemoOpen, setIsDemoOpen] = useState(false);
+  const closeDemo = useCallback(() => setIsDemoOpen(false), []);
   const Icon = project.icon;
 
   return (
+    <>
     <div
       className={styles.cardContainer}
       onMouseEnter={() => setIsFlipped(true)}
@@ -37,9 +42,32 @@ function ProjectCard({ project }: ProjectCardProps) {
               </span>
             ))}
           </div>
+          {project.demo && (
+            <button
+              className={styles.demoButton}
+              onClick={(e) => {
+                // On touch, the first tap should flip the card, not open the video
+                if (!isFlipped) return;
+                e.stopPropagation();
+                setIsDemoOpen(true);
+              }}
+            >
+              <FaPlay className={styles.demoIcon} />
+              {project.demo.label}
+            </button>
+          )}
         </div>
       </div>
     </div>
+    {project.demo && isDemoOpen && (
+      <DemoModal
+        title={`${project.title} · Demo`}
+        src={project.demo.src}
+        poster={project.demo.poster}
+        onClose={closeDemo}
+      />
+    )}
+    </>
   );
 }
 
