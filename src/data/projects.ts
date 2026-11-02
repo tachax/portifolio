@@ -1,4 +1,4 @@
-import { FaBrain, FaGlobe } from 'react-icons/fa';
+import { FaBrain, FaGlobe, FaMusic } from 'react-icons/fa';
 import type { IconType } from 'react-icons';
 
 export interface Project {
@@ -16,9 +16,29 @@ export interface Project {
     src: string; // path in /public (e.g. /videos/x.mp4) or a Google Drive /preview link
     poster?: string;
   };
+  link?: {
+    label: string;
+    href: string;
+  };
 }
 
 export const projects: Project[] = [
+  {
+    id: 'ginga',
+    category: 'DATA VIZ · FULL-STACK',
+    icon: FaMusic,
+    title: 'Ginga',
+    org: 'Personal project',
+    date: 'Nov 2026',
+    description:
+      'Dashboard on how music genres dance, built on 114,000 Spotify tracks. Postgres on Neon, an Express API on Render, and a React app with Ant Design and ECharts on Netlify, with SQL aggregations and a mobile layout.',
+    tags: ['React', 'TypeScript', 'ECharts', 'Ant Design', 'PostgreSQL', 'Express'],
+    variant: 'gold',
+    link: {
+      label: 'See it live',
+      href: 'https://ginga-music.netlify.app/',
+    },
+  },
   {
     id: 'cognitive-research',
     category: 'RESEARCH · FULL-STACK',

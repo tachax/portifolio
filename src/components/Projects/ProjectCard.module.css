@@ -18,7 +18,7 @@
 
 .face {
   position: absolute;
-  /* inset: 0; */
+  width: 100%;
   backface-visibility: hidden;
   border-radius: var(--radius-lg);
   padding: 24px;
@@ -102,6 +102,7 @@
   font-size: 13px;
   font-weight: 600;
   text-align: left;
+  text-decoration: none;
   color: white;
   background-color: var(--color-green-dark);
   border: none;

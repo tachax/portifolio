@@ -1,5 +1,5 @@
 import { useCallback, useState } from "react";
-import { FaPlay } from 'react-icons/fa';
+import { FaExternalLinkAlt, FaPlay } from 'react-icons/fa';
 import type { Project } from '../../data/projects'
 import DemoModal from './DemoModal';
 import styles from './ProjectCard.module.css'
@@ -55,6 +55,25 @@ function ProjectCard({ project }: ProjectCardProps) {
               <FaPlay className={styles.demoIcon} />
               {project.demo.label}
             </button>
+          )}
+          {project.link && (
+            <a
+              className={styles.demoButton}
+              href={project.link.href}
+              target="_blank"
+              rel="noopener noreferrer"
+              onClick={(e) => {
+                // On touch, the first tap should flip the card, not navigate
+                if (!isFlipped) {
+                  e.preventDefault();
+                  return;
+                }
+                e.stopPropagation();
+              }}
+            >
+              <FaExternalLinkAlt className={styles.demoIcon} />
+              {project.link.label}
+            </a>
           )}
         </div>
       </div>
