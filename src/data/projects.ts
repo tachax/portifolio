@@ -29,7 +29,7 @@ export const projects: Project[] = [
     icon: FaMusic,
     title: 'Ginga',
     org: 'Personal project',
-    date: 'Nov 2026',
+    date: 'Oct 2026',
     description:
       'Dashboard on how music genres dance, built on 114,000 Spotify tracks. Postgres on Neon, an Express API on Render, and a React app with Ant Design and ECharts on Netlify, with SQL aggregations and a mobile layout.',
     tags: ['React', 'TypeScript', 'ECharts', 'Ant Design', 'PostgreSQL', 'Express'],
